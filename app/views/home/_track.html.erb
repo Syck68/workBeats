@@ -1,0 +1,11 @@
+<h3><em><%=track.title %></em><h3>
+<ul>
+  <li><img src="<%=track.artwork_url%>"/></li>
+  <li><%=track.uri%></li>
+  <li> <object height="81" width="100%" class="myPlayer" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+  <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fsoundcloud.com%2Fmatas%2Fhobnotropic&enable_api=true&object_id=yourPlayerId"></param>
+  <param name="allowscriptaccess" value="always"></param>
+  <param name='show_comments' value='false'></param>
+  <embed allowscriptaccess="always" height="81" src="http://player.soundcloud.com/player.swf?url=<%=track.uri%>&enable_api=true&object_id=yourPlayerId&show_comments=false" type="application/x-shockwave-flash" width="100%" name="yourPlayerId"></embed>
+</object></li>
+</ul>

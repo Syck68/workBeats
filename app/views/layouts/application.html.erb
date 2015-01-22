@@ -4,11 +4,22 @@
   <title>WorkBeats</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script type="text/javascript" src="scripts/soundcloud.player.api.js"></script>
+<script type="text/javascript">
+   soundcloud.addEventListener('onPlayerReady', function(player, data) {
+     player.api_play();
+   });
+</script>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
 <%= yield %>
+
+<%= render 'layouts/user_widget' %>
 
 </body>
 </html>
