@@ -1,9 +1,10 @@
 <div class='track'>
   <h3 class='title'><%=track.title %></h3>
   <img class='artwork' src="<%=track.artwork_url%>"/>
-    <span class='track_url'><%=track.uri%></span>
-   <%=track.inspect %>
-   <!--  <object height="81" width="100" class="myPlayer" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+
+  <a href="<%=track.uri%>"+"??client_id=1931311a85d3f849f5e5cf60070cffad"></a>
+<!--    <%=track.inspect %>
+ -->   <!--  <object height="81" width="100" class="myPlayer" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
     <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fsoundcloud.com%2Fmatas%2Fhobnotropic&enable_api=true&object_id=yourPlayerId"></param>
     <param name="allowscriptaccess" value="always"></param>
     <param name='show_comments' value='false'></param>
@@ -11,3 +12,4 @@
   </object> -->
   <button type='button' class='btn btn-default add-song' href='songs_path'/>Add to Playlist</button>
 </div>
+
